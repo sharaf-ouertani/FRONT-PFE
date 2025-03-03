@@ -1,0 +1,79 @@
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espace entre le logo et le titre */
+}
+
+.logo {
+    width: auto;  /* Ajuste la taille du logo */
+    height: auto;
+}
+
+.medication-form {
+    max-width: 500px;
+    margin: auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.medication-form h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacement entre le label et le champ */
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Permet de redimensionner verticalement */
+    transition: border-color 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #28a745; /* Changement de bordure au focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+
+.btn-primary {
+    width: 100%;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}
+

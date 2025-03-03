@@ -1,0 +1,55 @@
+.orders-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order {
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.high-priority {
+    border-left: 5px solid red;
+}
+
+.medium-priority {
+    border-left: 5px solid orange;
+}
+
+.low-priority {
+    border-left: 5px solid green;
+}
+
+.priority-label {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.high-priority .priority-label {
+    background-color: red;
+}
+
+.medium-priority .priority-label {
+    background-color: orange;
+}
+
+.low-priority .priority-label {
+    background-color: green;
+}

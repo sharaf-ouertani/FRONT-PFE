@@ -1,0 +1,66 @@
+<form class="medication-form">
+   <div class="logo-title-container">
+    <img src="/images/logo.png"  class="logo">
+    <h2>Suivi de Fabrication du Médicament</h2>
+</div>
+
+
+    <!-- Informations du Responsable -->
+    <div class="form-group">
+        <label for="nom">Nom & Prénom du Responsable</label>
+        <input type="text" id="nom" class="form-control" placeholder="Entrez le nom et prénom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Professionnel</label>
+        <input type="email" id="email" class="form-control" placeholder="exemple@pharmacie.tn" required>
+    </div>
+
+    <div class="form-group">
+        <label for="telephone">Numéro de Téléphone</label>
+        <input type="tel" id="telephone" class="form-control" placeholder="+216 XXXXXXXXX" required>
+    </div>
+
+    <!-- Informations sur le Médicament -->
+    <div class="form-group">
+        <label for="medicament">Nom du Médicament</label>
+        <input type="text" id="medicament" class="form-control" placeholder="Nom du médicament" required>
+    </div>
+
+    <div class="form-group">
+        <label for="lot">Numéro de Lot</label>
+        <input type="text" id="lot" class="form-control" placeholder="Entrez le numéro de lot" required>
+    </div>
+
+    <div class="form-group">
+        <label for="date_production">Date de Production</label>
+        <input type="date" id="date_production" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="date_expiration">Date d'Expiration</label>
+        <input type="date" id="date_expiration" class="form-control" required>
+    </div>
+
+    <!-- Étapes de Fabrication -->
+    <div class="form-group">
+        <label>Phase Actuelle de Fabrication</label>
+        <select class="form-control" id="phase_fabrication" required>
+            <option value="">Sélectionnez une phase</option>
+            <option value="Pesée">Pesée</option>
+            <option value="Mélange">Mélange</option>
+            <option value="Granulation">Granulation</option>
+            <option value="Compression">Compression</option>
+            <option value="Enrobage">Enrobage</option>
+            <option value="Conditionnement">Conditionnement</option>
+            <option value="Contrôle Qualité">Contrôle Qualité</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="remarques">Remarques et Observations</label>
+        <textarea id="remarques" class="form-control" rows="3" placeholder="Ajoutez des remarques"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+</form>
