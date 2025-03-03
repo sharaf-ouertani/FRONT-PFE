@@ -1,90 +1,35 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  
-  <div class="sidebar" id="sidebar">
-    <button id="sidebar-toggle" class="sidebar-toggle"> <i class="fas fa-bars"></i> </button>
+<nav class="navbar">
+  <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+  </button>
+  <div class="search-bar">
+      <input type="text" placeholder="Search projects...">
+  </div>
+  <div class="user-info">
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-user-circle"></i> David Greymaax
+  </div>
+</nav>
 
-    <div class="sidebar-header">
-        <h2>Menu</h2>
-    </div>
-    
-    <ul class="sidebar-menu">
-        <li><i class="fas fa-home"></i> Acceuil</li>
-        <li><i class="fas fa-box"></i> Stocks</li>
-        <li><i class="fas fa-shopping-cart"></i> Orders
-            <ul class="submenu">
-                <li><i class="fas fa-map-marker-alt"></i> Locale</li>
-                <li><i class="fas fa-globe"></i> Internationale</li>
-            </ul>
-        </li>
-        <li><i class="fas fa-wallet"></i> Budgets</li>
-    </ul>
+<div class="main-content" id="main-content">
+        
+  <div class="dashboard-content">
+      <div class="cards">
+          <div class="card red">
+              <h3>Weekly Sales</h3>
+              <p>$15,000</p>
+              <span>Increased by 60%</span>
+          </div>
+          <div class="card blue">
+              <h3>Weekly Orders</h3>
+              <p>45,633</p>
+              <span>Decreased by 10%</span>
+          </div>
+          <div class="card green">
+              <h3>Visitors Online</h3>
+              <p>95,574</p>
+              <span>Increased by 5%</span>
+          </div>
+      </div>
+  </div>
 </div>
-
-
-    <div class="main-content" id="main-content">
-        <nav class="navbar">
-            <button class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="search-bar">
-                <input type="text" placeholder="Search projects...">
-            </div>
-            <div class="user-info">
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-user-circle"></i> David Greymaax
-            </div>
-        </nav>
-        <div class="dashboard-content">
-            <div class="cards">
-                <div class="card red">
-                    <h3>Weekly Sales</h3>
-                    <p>$15,000</p>
-                    <span>Increased by 60%</span>
-                </div>
-                <div class="card blue">
-                    <h3>Weekly Orders</h3>
-                    <p>45,633</p>
-                    <span>Decreased by 10%</span>
-                </div>
-                <div class="card green">
-                    <h3>Visitors Online</h3>
-                    <p>95,574</p>
-                    <span>Increased by 5%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          let sidebarToggle = document.getElementById("sidebar-toggle");
-          let sidebar = document.querySelector(".sidebar");
-          let mainContent = document.querySelector(".main-content");
-      
-          if (!sidebarToggle) {
-              console.error("Sidebar toggle button not found!");
-              return;
-          }
-      
-          sidebarToggle.addEventListener("click", function() {
-              if (sidebar.classList.contains("active")) {
-                  sidebar.classList.remove("active");
-                  mainContent.classList.remove("shifted");
-              } else {
-                  sidebar.classList.add("active");
-                  mainContent.classList.add("shifted");
-              }
-          });
-      });
-      </script>
-</body>
-</html>
