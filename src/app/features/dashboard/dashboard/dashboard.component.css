@@ -13,7 +13,19 @@
     overflow: hidden; /* Évite les débordements */
 }
 
-
+/* 📌 Navbar : prend toute la largeur */
+app-navbar {
+    background: white;
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 /* 📌 Contenu du dashboard */
 .dashboard-container {

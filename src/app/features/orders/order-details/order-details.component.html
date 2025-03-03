@@ -1,22 +1,35 @@
-<div class="orders-container">
-    <h2>Ordres des Hôpitaux</h2>
-    <div class="orders-list">
-        <div class="order high-priority">
-            <h3>Hôpital A</h3>
-            <p>Commande : Médicament X - 500 unités</p>
-            <span class="priority-label">Haute Priorité</span>
-        </div>
-
-        <div class="order medium-priority">
-            <h3>Hôpital B</h3>
-            <p>Commande : Médicament Y - 300 unités</p>
-            <span class="priority-label">Priorité Moyenne</span>
-        </div>
-
-        <div class="order low-priority">
-            <h3>Hôpital C</h3>
-            <p>Commande : Médicament Z - 200 unités</p>
-            <span class="priority-label">Basse Priorité</span>
+<div class="layout">
+    <div class="content">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="content">
+        <app-navbar></app-navbar>
+        
+ 
+        <div class="orders-container">
+            <h2>Ordres des Hôpitaux</h2>
+            <div class="orders-list">
+                <div class="order high-priority">
+                    <h3>Hôpital A</h3>
+                    <p>Commande : Médicament X - 500 unités</p>
+                    <span class="priority-label">Haute Priorité</span>
+                </div>
+        
+                <div class="order medium-priority">
+                    <h3>Hôpital B</h3>
+                    <p>Commande : Médicament Y - 300 unités</p>
+                    <span class="priority-label">Priorité Moyenne</span>
+                </div>
+        
+                <div class="order low-priority">
+                    <h3>Hôpital C</h3>
+                    <p>Commande : Médicament Z - 200 unités</p>
+                    <span class="priority-label">Basse Priorité</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<button class="alert-button"><i class="fa-solid fa-bell"></i></button>
+<button class="substitutions-button"><i class="fa-solid fa-sync"></i></button>
